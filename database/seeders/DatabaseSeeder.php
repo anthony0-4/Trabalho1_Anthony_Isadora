@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CategoriaSeeder::class,
             EstrelasSeeder::class,
+            EstadosSeeder::class,
         ]);
     }
 }

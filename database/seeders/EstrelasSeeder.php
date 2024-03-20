@@ -15,12 +15,12 @@ class EstrelasSeeder extends Seeder
      */
     public function run()
     {
-        Estrelas::factory()->count(5)->sequence([
-            'estrelas' => "1 estrela",
-            'estrelas' => "2 estrelas",
-            'estrelas' => "3 estrelas",
-            'estrelas' => "4 estrelas",
-            'estrelas' => "5 estrelas",
-        ])->create();
+        Estrelas::insert([
+            ['estrelas' => "1 estrela"],
+            ['estrelas' => "2 estrelas"],
+            ['estrelas' => "3 estrelas"],
+            ['estrelas' => "4 estrelas"],
+            ['estrelas' => "5 estrelas"],
+        ]);
     }
 }

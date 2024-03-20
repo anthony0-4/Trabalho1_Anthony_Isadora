@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\LivrosController;
+use App\Http\Controllers\LivrariaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +23,6 @@ Route::post('/categoria/search', [CategoriaController::class, "search"])->name('
 
 Route::resource('livros', LivrosController::class);
 Route::post('/livros/search', [LivrosController::class, "search"])->name('livros.search');
+
+Route::resource('livraria', LivrariaController::class);
+Route::post('/livraria/search', [LivrariaController::class, "search"])->name('livraria.search');
