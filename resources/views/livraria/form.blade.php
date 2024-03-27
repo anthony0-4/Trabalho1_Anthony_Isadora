@@ -37,15 +37,15 @@
     <input type="text" name="cidade" class="form-control"
         value="@if (!empty($dado->cidade)) {{ $dado->cidade }}@elseif (!empty(old('cidade'))){{ old('cidade') }}@else{{ '' }} @endif"><br>
 
-        <label for="">Avaliação</label><br>
+        <label for="">Estados</label><br>
     <select name="estados_id" class="form-select">
         @foreach ($estados as $item)
             <option value="{{ $item->id }}">{{ $item->estados }}</option>
         @endforeach
     </select><br>
 
-    <button type="submit" class="btn btn-success">Salvar</button>
-    <a href="{{ url('livros') }}" class="btn btn-primary">Voltar</a>
+    <button type="button" class="btn btn-outline-success">Salvar</button>
+    <a href="{{ url('livros') }}" class="btn btn-outline-warning">Voltar</a>
 </form>
 
 @stop
