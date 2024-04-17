@@ -35,7 +35,7 @@
         value="@if (!empty($dado->lancamento)) {{ $dado->lancamento }}@elseif (!empty(old('lancamento'))){{ old('lancamento') }}@else{{ '' }} @endif"><br>
 
 
-        <button type="button" class="btn btn-outline-success">Salvar</button>
+        <button type="submit" class="btn btn-outline-success">Salvar</button>
     <a href="{{ url('categoria') }}" class="btn btn-outline-warning">Voltar</a>
 </form>
 

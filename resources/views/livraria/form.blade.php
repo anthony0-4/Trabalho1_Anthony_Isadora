@@ -44,8 +44,8 @@
         @endforeach
     </select><br>
 
-    <button type="button" class="btn btn-outline-success">Salvar</button>
-    <a href="{{ url('livros') }}" class="btn btn-outline-warning">Voltar</a>
+    <button type="submit" class="btn btn-outline-success">Salvar</button>
+    <a href="{{ url('livraria') }}" class="btn btn-outline-warning">Voltar</a>
 </form>
 
 @stop
