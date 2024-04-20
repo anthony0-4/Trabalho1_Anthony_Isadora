@@ -13,7 +13,7 @@
             <input type="text" name="titulo" class="form-control"><br>
         </div>
         <div class="col-4" style="margin-top: 22px;">
-            <button type="button" class="btn btn-outline-danger"> <i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+            <button type="submit" class="btn btn-outline-danger"> <i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
             <a href="{{ url('livraria/create') }}" class="btn btn-outline-warning"><i class="fa-solid fa-plus"></i> Novo</a>
         </div>
     </div>
