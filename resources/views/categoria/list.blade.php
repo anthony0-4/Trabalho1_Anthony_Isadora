@@ -1,6 +1,12 @@
 @extends('base')
 @section('conteudo')
 @section('titulo', 'Listagem de Categorias de livros')
+<div class="" style="margin-top: 22px; text-align: right;">
+    <a class="navbar-brand" href="{{url('categoria')}}"><i class="fa-solid fa-bookmark"></i> Categorias</a><br>
+    <a class="navbar-brand" href="{{url('livraria')}}"><i class="fa-solid fa-location-dot"></i> Livrarias</a><br>
+    <a class="navbar-brand" href="{{url('livros')}}"><i class="fa-solid fa-book-open-reader"></i> Livros</a><br>
+    <a class="navbar-brand" href="{{ url('') }}"><i class="fa-solid fa-house"></i> Inicio</a><br>
+  </div>
 
 <h3>Listagem de Categorias de Livros</h3>
 
@@ -13,8 +19,8 @@
             <input type="text" name="categoria" class="form-control"><br>
         </div>
         <div class="col-4" style="margin-top: 22px;">
-            <button type="submit" class="btn btn-outline-danger"> <i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
-            <a href="{{ url('categoria/create') }}" class="btn btn-outline-warning"><i class="fa-solid fa-plus"></i> Novo</a>
+            <button type="submit" class="btn btn-outline-danger"> <i class="fa-solid fa-binoculars"></i> Buscar</button>
+            <a href="{{ url('categoria/create') }}" class="btn btn-outline-warning"><i class="fa-solid fa-file"></i> Novo</a>
         </div>
     </div>
 </form>
@@ -40,14 +46,14 @@
                 <td>{{ $item->genero }}</td>
                 <td>{{ $item->lancamento }}</td>
                 <td><a href="{{ route('categoria.edit', $item->id) }} "class="btn btn-outline-primary" title="Editar"><i
-                            class="fa-solid fa-pen-to-square"></i></a></td>
+                            class="fa-solid fa-pen-nib"></i></a></td>
                 <td>
                     <form action="{{ route('categoria.destroy', $item) }}" method="post">
                         @method('DELETE')
                         @csrf
                         <button type="submit" class="btn btn-outline-danger" title="Deletar"
                             onclick="return confirm('Deseja realmente deletar esse registro?')">
-                            <i class="fa-solid fa-trash-can"></i></button>
+                            <i class="fa-solid fa-circle-xmark"></i></button>
                     </form>
                 </td>
             </tr>

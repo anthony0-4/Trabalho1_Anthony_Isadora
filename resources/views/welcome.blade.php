@@ -21,6 +21,11 @@
         </style>
     </head>
     <body class="antialiased">
+        <div class="col-4" style="margin-top: 22px;">
+                <a class="navbar-brand" href="{{url('categoria')}}" class="btn btn-outline-primary"><i class="fa-solid fa-bookmark"></i>Categorias</a>
+                <a class="navbar-brand" href="{{url('livros')}}" class="btn btn-outline-primary"><i class="fa-solid fa-book-open-reader"></i>Livros</a>
+                <a class="navbar-brand" href="{{url('livrarias')}}" class="btn btn-outline-primary"><i class="fa-solid fa-location-dot"></i>Livrarias</a>
+              </div>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -53,5 +58,34 @@
                   </div>
             </div>
         </div>
+        <div class="row g-5">
+          <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">Talvez te interesse</h3>
+          <article>
+            <section>
+              <h3 class="fst-italic">1.1Qual a Importância da leitura?</h3>
+              <p class="text-align: justify; ">Um pouco mais da metade da população brasileira, com 5 anos de idade ou mais, é considerada “leitor”, ou seja, leu pelo menos um livro nos últimos três meses. Pouco, né?
+                Mas esse é o cenário da leitura no Brasil mostrada na 4°e última edição da Pesquisa Retratos da Leitura, divulgada em 2016. O que muita gente não leva em consideração
+                é que o mundo da leitura potencializa nossa capacidade de pensar, produzir, criar, compreender, ouvir e, claro, saber mais, amplia o conhecimento.
+
+        Transformar a leitura em um hábito é tão urgente quanto necessário desde a infância. Isso permite o desenvolvimento intelectual e ensina o caminho
+        mais curto para o conhecimento. Torna essa atividade um prazer imensurável e de valor incalculável para o resto da vida. Em meio ao boom tecnológico, à essa revolução
+        digital e a quase incorporação dos smartphones ao corpo humano – e não ache exagero, lembre-se que você dorme com o celular, acorda com ele, almoça com ele do lado e vai
+        ao banheiro com ele, e faz muitas outras coisas com esse aparelhinho, é ou não é assim? – a frequência da leitura tem diminuído vertiginosamente.
+        Há ainda que se observar as também novas ferramentas tecnológicas que chegaram para dar aquela contribuição e apoio aos leitores. Aparelhos, como kindle,
+        e novos formatos de livros como os e-books e áudio books são alguns exemplos positivos surgidos nesse ambiente altamente transformador, revolucionário e disruptivo como
+        o universo digital.<br><br></p>
+            </section>
+            <section>
+                <h3 class="fst-italic">1.2 A Leitura reduz o Estresse</h3>
+                <p class="text-align: justify;">
+                  Todos nós já sentimos isso em primeira mão. Ler um bom livro após um dia longo e estressante tem efeitos incríveis em nosso estado de espírito. Estudos demonstram que o ato de ler um livro pode ser até 600% mais eficiente para aliviar o estresse do que jogar videogames e 300% mais eficiente do que dar uma caminhada. Esse é um fato bem interessante sobre a leitura.
+<br>
+De acordo com um estudo de 2009 conduzido pela Universidade de Sussex, apenas 6 minutos de leitura são suficientes para reduzir os níveis de estresse em até 68%. É uma opção mais rápida e eficaz do que muitos outros métodos de redução do estresse, como ouvir música ou beber uma xícara de chá.
+                </p>
+
+            </section>
+        </article>
+      </div>
     </body>
 </html>
