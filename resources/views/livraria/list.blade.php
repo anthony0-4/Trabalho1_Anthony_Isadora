@@ -2,12 +2,14 @@
 @section('conteudo')
 @section('titulo', 'Listagem de livros')
 <div class="" style="margin-top: 22px; text-align: right;">
+    <div class="" style="text-align: left; width:100px">
+        <img src="{{asset('img/SUN BOOKS.png')}}" class="img-fluid rounded-start" width="200px">
+    </div>
     <a class="navbar-brand" href="{{url('categoria')}}"><i class="fa-solid fa-bookmark"></i> Categorias</a><br>
     <a class="navbar-brand" href="{{url('livraria')}}"><i class="fa-solid fa-location-dot"></i> Livrarias</a><br>
     <a class="navbar-brand" href="{{url('livros')}}"><i class="fa-solid fa-book-open-reader"></i> Livros</a><br>
     <a class="navbar-brand" href="{{ url('') }}"><i class="fa-solid fa-house"></i> Inicio</a><br>
   </div>
-
 <h3>Listagem de Livraria</h3>
 
 <form action="{{ route('livraria.search') }}" method="post">
